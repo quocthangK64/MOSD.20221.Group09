@@ -1,7 +1,7 @@
-package com.ict.group06.travelwala.passenger.controller;
+package com.ict.group09.travelwala.passenger.controller;
 
-import com.ict.group06.travelwala.model.request.PassengerRequest;
-import com.ict.group06.travelwala.passenger.service.PassengerService;
+import com.ict.group09.travelwala.model.request.PassengerRequest;
+import com.ict.group09.travelwala.passenger.service.PassengerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
