@@ -21,7 +21,6 @@ export function convertMillisecondsToHourMinute(milliseconds: number): string {
 
   minutes = seconds >= 30 ? minutes + 1 : minutes;
   minutes = minutes % 60;
-
   hours = hours % 24;
 
   return `${padTo2Digits(hours)}h ${padTo2Digits(minutes)}m`;
@@ -31,3 +30,15 @@ export function hourMinuteDiff(date1: Date, date2: Date): string {
   let diff = date2.getTime() - date1.getTime();
   return convertMillisecondsToHourMinute(diff);
 }
+
+/**
+ * Convert date to expected <code>format<code>
+ * @param date the date needed to be formatted
+ * @param isEndDate if true, this function returns the end of the date
+ * @param format the format of the formatted date
+ */
+export function formatDate(
+  date?: Date | string | null,
+  isEndDate: boolean = false,
+  format: string = "YYYY-MM-DDTHH:mm:ss[Z]"
+): string {
