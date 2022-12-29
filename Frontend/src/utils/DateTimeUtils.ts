@@ -21,6 +21,7 @@ export function convertMillisecondsToHourMinute(milliseconds: number): string {
 
   minutes = seconds >= 30 ? minutes + 1 : minutes;
   minutes = minutes % 60;
+
   hours = hours % 24;
 
   return `${padTo2Digits(hours)}h ${padTo2Digits(minutes)}m`;
@@ -42,7 +43,7 @@ export function formatDate(
   isEndDate: boolean = false,
   format: string = "YYYY-MM-DDTHH:mm:ss[Z]"
 ): string {
-if (date) {
+  if (date) {
     let dateUtc: Moment;
     if (typeof date === "string") {
       dateUtc = moment(date, "DD/MM/YYYY");
