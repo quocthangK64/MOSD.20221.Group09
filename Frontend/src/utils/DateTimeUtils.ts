@@ -42,3 +42,19 @@ export function formatDate(
   isEndDate: boolean = false,
   format: string = "YYYY-MM-DDTHH:mm:ss[Z]"
 ): string {
+if (date) {
+    let dateUtc: Moment;
+    if (typeof date === "string") {
+      dateUtc = moment(date, "DD/MM/YYYY");
+    } else {
+      // format date theo chuẩn ISO string (YYYY-MM-DD)
+      dateUtc = moment(moment(date).format("YYYY-MM-DD"));
+    }
+    if (isEndDate) {
+      // cộng 1 ngày trừ 1s để lấy 16:59:59 của ngày hôm đó tức là 23:59:59
+      return dateUtc.add(1, "days").subtract(1, "seconds").format(format);
+    }
+    return dateUtc.format(format);
+  }
+  return "";
+}
