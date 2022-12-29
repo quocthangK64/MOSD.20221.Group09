@@ -19,6 +19,10 @@ public class PassengerController {
 
     @PostMapping()
     public ResponseEntity<?> savePassenger(@RequestBody @Valid PassengerRequest passengerRequest) {
-        // TODO
+        try {
+            return ResponseEntity.ok().body(passengerService.savePassenger(passengerRequest));
+        } catch (Exception e) {
+            return ResponseEntity.status(422).body("Something bad occurred");
+        }
     }
 }
