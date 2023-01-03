@@ -1,4 +1,4 @@
-package com.ict.group06.travelwala.model.request;
+package com.ict.group09.travelwala.model.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
