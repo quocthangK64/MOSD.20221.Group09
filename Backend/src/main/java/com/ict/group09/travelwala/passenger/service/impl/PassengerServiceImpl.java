@@ -16,5 +16,9 @@ public class PassengerServiceImpl implements PassengerService {
     private PassengerMapper mapper = Mappers.getMapper(PassengerMapper.class);
     private final PassengerRepository passengerRepository;
 
-    // TODO
+    @Override
+    public PassengerResponse savePassenger(PassengerRequest passengerRequest) {
+        Passenger passenger = mapper.passengerRequestToPassenger(passengerRequest);
+        return mapper.passengerToPassengerResponse(passengerRepository.save(passenger));
+    }
 }
