@@ -13,5 +13,8 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class PassengerServiceImpl implements PassengerService {
+    private PassengerMapper mapper = Mappers.getMapper(PassengerMapper.class);
+    private final PassengerRepository passengerRepository;
+
     // TODO
 }
