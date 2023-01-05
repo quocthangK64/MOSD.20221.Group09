@@ -4,5 +4,5 @@ import com.ict.group09.travelwala.model.request.PassengerRequest;
 import com.ict.group09.travelwala.model.response.PassengerResponse;
 
 public interface PassengerService {
-    // TODO
+    PassengerResponse savePassenger(PassengerRequest passengerRequest);
 }
