@@ -6,5 +6,8 @@ import com.ict.group09.travelwala.flight.model.request.FlightRequest;
 import com.ict.group09.travelwala.flight.model.response.SearchFlightResponse;
 
 public interface FlightService {
-    // TODO
+    SearchFlightResponse findAll(FlightCriteria flightCriteria);
+    FlightResponse findById(String id);
+    FlightResponse createNewFlight(FlightRequest flightRequest);
+    FlightResponse updateFlight(String id, FlightRequest flightRequest);
 }
