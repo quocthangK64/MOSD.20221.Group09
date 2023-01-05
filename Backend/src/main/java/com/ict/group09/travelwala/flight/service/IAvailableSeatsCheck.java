@@ -1,5 +1,5 @@
 package com.ict.group09.travelwala.flight.service;
 
 public interface IAvailableSeatsCheck {
-    // TODO
+    boolean isEnoughSeats(String flightId, String seatClass, int numberOfSeats);
 }
