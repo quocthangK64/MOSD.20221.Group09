@@ -4,5 +4,5 @@ import com.ict.group09.travelwala.common.enumeration.seatclass.SeatClassEnum;
 import com.ict.group09.travelwala.ticket.enumeration.TicketEnum;
 
 public interface ICalculateFlightFare {
-    // TODO
+    Double getFlightFare(TicketEnum ticketType, SeatClassEnum seatClass, String flightId);
 }
