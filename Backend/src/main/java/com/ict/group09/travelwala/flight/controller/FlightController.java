@@ -21,7 +21,7 @@ public class FlightController {
 
     @PostMapping ("/search")
     public ResponseEntity<?> findAll(@RequestBody FlightCriteria flightCriteria) {
-        return ResponseEntity.ok(flightService.findAll());
+        return ResponseEntity.ok(flightService.findAll(flightCriteria));
     }
 
     @GetMapping("/{id}")
@@ -31,7 +31,7 @@ public class FlightController {
 
     @PostMapping()
     public ResponseEntity<?> createNewFlight(@RequestBody FlightRequest flightRequest) {
-        return ResponseEntity.ok(flightService.createNewFlight());
+        return ResponseEntity.ok(flightService.createNewFlight(flightRequest));
     }
 
     @PutMapping("/{id}")
