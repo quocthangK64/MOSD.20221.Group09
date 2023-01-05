@@ -19,5 +19,26 @@ public class FlightController {
         this.flightService = flightService;
     }
 
-    // TODO
+    @PostMapping ("/search")
+    public ResponseEntity<?> findAll(@RequestBody FlightCriteria flightCriteria) {
+        return ResponseEntity.ok(flightService.findAll());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> findById(@PathVariable("id") String id) {
+        return ResponseEntity.ok(flightService.findById(id));
+    }
+
+    @PostMapping()
+    public ResponseEntity<?> createNewFlight(@RequestBody FlightRequest flightRequest) {
+        return ResponseEntity.ok(flightService.createNewFlight());
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> updateFlight(@PathVariable("id") String id,
+                                          @RequestBody FlightRequest flightRequest) {
+        FlightResponse flightResponse = flightService.updateFlight(id,flightRequest);
+        return ResponseEntity.ok(flightResponse);
+
+    }
 }
