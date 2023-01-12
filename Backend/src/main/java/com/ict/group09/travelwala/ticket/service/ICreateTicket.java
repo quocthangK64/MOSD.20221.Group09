@@ -1,7 +1,7 @@
-package com.ict.group06.travelwala.ticket.service;
+package com.ict.group09.travelwala.ticket.service;
 
-import com.ict.group06.travelwala.model.request.CreateBookingFlightSpecs;
-import com.ict.group06.travelwala.model.response.CreateTicketResponse;
+import com.ict.group09.travelwala.model.request.CreateBookingFlightSpecs;
+import com.ict.group09.travelwala.model.response.CreateTicketResponse;
 
 import java.util.List;
 
