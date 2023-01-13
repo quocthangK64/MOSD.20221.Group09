@@ -11,3 +11,5 @@ class FlightService {
       });
     }
 }
+
+export default FlightService;
