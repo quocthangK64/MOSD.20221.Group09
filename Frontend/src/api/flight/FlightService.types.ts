@@ -9,12 +9,12 @@ export type FlightCriteria = {
     seatClass: string;
   };
   
-  export type SearchFlightResponse = {
+export type SearchFlightResponse = {
     departureFlights?: FlightResponse[];
     returnFlights?: FlightResponse[];
   };
   
-  export type FlightResponse = {
+export type FlightResponse = {
     id: string;
     code: string;
     adultEconomicPrice: number;
@@ -32,7 +32,7 @@ export type FlightCriteria = {
     airline: AirlineResponse;
   };
   
-  export type AirlineResponse = {
+export type AirlineResponse = {
     id: string;
     name: string;
     alias?: string | null;
@@ -45,7 +45,7 @@ export type FlightCriteria = {
     imageLink?: string | null;
   };
   
-  export type PlaneResponse = {
+export type PlaneResponse = {
     id: string;
     manufacturer: string;
     code: string;
