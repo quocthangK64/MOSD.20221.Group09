@@ -1,7 +1,7 @@
-package com.ict.group06.travelwala.accounting.entity;
+package com.ict.group09.travelwala.accounting.entity;
 
-import com.ict.group06.travelwala.accounting.enumeration.InvoiceStatus;
-import com.ict.group06.travelwala.booking.entity.Booking;
+import com.ict.group09.travelwala.accounting.enumeration.InvoiceStatus;
+import com.ict.group09.travelwala.booking.entity.Booking;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
