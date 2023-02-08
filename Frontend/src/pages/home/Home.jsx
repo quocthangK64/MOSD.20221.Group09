@@ -1,4 +1,4 @@
-vvimport SwitchSearch from "./components/SwitchSearch";
+import SwitchSearch from "./components/SwitchSearch";
 import backgroundImage from "../../assets/sunset-beach.jpg";
 import { Box, Typography } from "@mui/material";
 import { NewsLetter } from "../../components/NewsLetter";
