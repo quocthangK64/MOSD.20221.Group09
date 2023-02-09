@@ -124,9 +124,9 @@ export default function PriceDetail() {
         tempPassengerList.map((e) => {
             e.dob = 
             {
-                year: e.dateOfBirth.split("/")[2],
-                month: e.dateOfBirth.split("/")[1],
-                day: e.dateOfBirth.split("/")[0]
+                year: parseInt(e.dateOfBirth.split("/")[2]),
+                month: parseInt(e.dateOfBirth.split("/")[1]),
+                day: parseInt(e.dateOfBirth.split("/")[0])
             };
             e.nationality = "vietnam";
         }
