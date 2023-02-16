@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from "axios";
 import qs from "qs";
 
-export const SERVER_URL = `https://localhost:8080`;
+export const SERVER_URL = `http://localhost:8080`;
 export const API_BASE_URL = `${SERVER_URL}/api`;
 
 export const axiosConfig = (): AxiosRequestConfig => {
