@@ -141,7 +141,7 @@ export default function PriceDetail() {
                 flightProductSpecs: {
                     departureFlightId: departureFlight.id,
                     returnFlightId: returnFlight.id ? returnFlight.id : null,
-                    seatClass: departureFlight.occupiedEconomicSeats == 0 ? "bussiness" : "Economy",
+                    seatClass: departureFlight.occupiedEconomicSeats == 0 ? "Business" : "Economy",
                     adultCount: adult,
                     childCount: child,
                     infantCount: infant
