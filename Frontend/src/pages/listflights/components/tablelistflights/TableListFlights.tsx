@@ -4,7 +4,7 @@ import {
   SearchFlightResponse,
 } from "../../../../api/flight/FlightService.types";
 import { Tab, Table, TableBody, TableContainer, Tabs } from "@mui/material";
-import FlightItem from "./tablelistflight/FlightItem/FlightItem";
+import FlightItem from "./FlightItem/FlightItem";
 import { BoxTableListFlight } from "./TableListFlight.styles";
 import { useDispatch, useSelector } from "react-redux";
 import {
